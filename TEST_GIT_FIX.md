@@ -1,0 +1,1 @@
+# Git Amnesia Solution Test
