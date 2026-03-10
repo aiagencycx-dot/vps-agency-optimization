@@ -36,3 +36,17 @@ See `PROJECT_PLAN.md` for detailed task breakdown and user stories.
 - System uptime > 99.5%
 - Mean response time < 2 seconds
 - Automated 80% of routine maintenance tasks
+## 🔧 Git Setup (No More Amnesia)
+To prevent agents from forgetting Git configuration between sessions:
+```bash
+# Run once per session
+/root/jira-agency/scripts/git-setup.sh
+
+# Or manually:
+git config --global user.email "pm@jira-agency.ai"
+git config --global user.name "Jira Agency PM"
+git remote set-url origin git@github.com:aiagencycx-dot/vps-agency-optimization.git
+```
+
+**SSH Key**: `~/.ssh/github_aiagencycx` (pre-configured)
+**Memory File**: `/root/jira-agency/memory/git-setup.md`
